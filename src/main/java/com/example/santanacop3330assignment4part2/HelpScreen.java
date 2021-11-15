@@ -39,7 +39,7 @@ public class HelpScreen
                         6: Click the "Add Item To List" button to update it
                                                 
                         \t\t\tNOW YOU HAVE EDITED AN ITEM IN YOUR LIST!
-                        
+                                                
                         --------------------------------------
                         HOW TO DELETE AN ITEM IN A LIST
                         --------------------------------------
@@ -47,8 +47,18 @@ public class HelpScreen
                         2: Select Display All ( or whichever you want )
                         3: Click the item you want to delete and close the window
                         4: Click the "Delete Item" button
-             
+                                     
                         \t\t\tNOW YOU HAVE DELETED AN ITEM IN YOUR LIST!
+                                                
+                        --------------------------------------
+                        HOW TO MARK AN ITEM AS COMPLETE IN A LIST
+                        --------------------------------------
+                        1: Click display on the menu bar at the top
+                        2: Select Display All ( or whichever you want )
+                        3: Click the item you want to mark complete and close the window
+                        4: Click the "Mark Complete" button
+                                     
+                        \t\t\tNOW YOU HAVE MARKED AN ITEM AS COMPLETE IN YOUR LIST!
                                                 
                         --------------------------------------
                         HOW TO SAVE YOUR LIST
