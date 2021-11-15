@@ -1,0 +1,156 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App
+{
+    + main()
+    + start()
+}
+
+class Controller
+{
+    - ListView<CreateItem> incompleteList
+    - ListView<CreateItem> completedList
+    - DatePicker date
+    - TextField description
+    - ObservableList completed
+    - ObservableList incomplete
+    - CreateItem item
+
+    + helpScreen()
+    + initialize()
+    + save()
+    + open()
+    + dateFromFile()
+    + descriptionFromFile()
+    + displayAll()
+    + displayComplete()
+    + displayIncomplete()
+    + addItem()
+    + markComplete()
+    + delete()
+    + clear()
+    + edit()
+
+}
+
+class AddItem
+{
+    - CreateItem item
+    - TextField description
+    - DatePicker date
+    - ObservableList<CreateItem> incomplete
+    - ListView<CreateItem> incompleteList
+
+    + addItem()
+}
+
+class Clear
+{
+    - ObservableList<CreateItem> incomplete
+    - ListView<CreateItem> incompleteList
+    - ObservableList<CreateItem> complete
+    - ListView<CreateItem> completeList
+
+    + clearList()
+}
+
+class CreateItem
+{
+    - boolean complete
+    - String description
+    - LocalDate date
+
+    + CreateItem()
+    + getDescription()
+    + setDescription()
+    + getDate()
+    + setDate()
+    + getComplete()
+    + setComplete()
+    + toString()
+
+}
+
+class Delete
+{
+    - ObservableList<CreateItem> incompleteList
+    - ListView<CreateItem> incomplete
+    - ObservableList<CreateItem> completedList
+    - ListView<CreateItem> completed
+
+    + deleteItem()
+}
+
+class Display
+{
+    - ListView<CreateItem> incomplete
+    - ListView<CreateItem> complete
+
+    + displayAll()
+    + displayComplete()
+    + displayIncomplete()
+}
+
+class Edit
+{
+    - CreateItem item
+    - TextField description
+    - DatePicker date
+    - ObservableList<CreateItem> list
+
+    + edit()
+    + update()
+    + cannotEdit()
+}
+
+class HelpScreen
+{
+    - String title
+
+    + help()
+}
+
+class MarkComplete
+{
+    - ObservableList<CreateItem> incompleteList
+    - ListView<CreateItem> incomplete
+    - ObservableList<CreateItem> completedList
+    - ListView<CreateItem> complete
+
+    + markComplete()
+}
+
+class Open
+{
+    - String path
+
+    + openList()
+    + ArrayList<String> getIncomplete()
+    + ArrayList<String> getComplete()
+}
+
+class Save
+{
+    - String path
+    - ObservableList<CreateItem> incompleteList
+    - ObservableList<CreateItem> completedList
+
+    + saveFile()
+    + write()
+}
+
+javafx.Application<|-- App
+App -- Controller
+Controller -- AddItem
+Controller -- Clear
+Controller -- CreateItem
+Controller -- Delete
+Controller -- Display
+Controller -- Edit
+Controller -- HelpScreen
+Controller -- MarkComplete
+Controller -- Open
+Controller -- Save
+
+@enduml
