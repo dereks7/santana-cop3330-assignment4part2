@@ -10,6 +10,7 @@ import java.time.LocalDate;
 public class CreateItem
 {
     private boolean complete;
+    private boolean incomplete;
     private String description;
     private LocalDate date;
 
@@ -66,6 +67,21 @@ public class CreateItem
         // sets the item as complete
 
         this.complete = isComplete;
+    }
+
+    public boolean getIncomplete()
+    {
+        // gets the input from user and returns false if not marked incomplete
+        // and true if marked incomplete
+
+        return incomplete;
+    }
+
+    public void setIncomplete (boolean isIncomplete)
+    {
+        // sets the item as incomplete
+
+        this.incomplete = isIncomplete;
     }
 
     @Override

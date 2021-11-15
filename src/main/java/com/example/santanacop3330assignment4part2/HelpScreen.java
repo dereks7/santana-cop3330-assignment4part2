@@ -34,9 +34,9 @@ public class HelpScreen
                         1: Click display on the menu bar at the top
                         2: Select Display All ( or whichever you want )
                         3: Click the item you want to edit and close the window
-                        4: Click the "Edit Item" button
+                        4: Click the "Edit" button
                         5: Type in a new description or new date depending what you want to edit
-                        6: Click the "Add Item To List" button to update it
+                        6: Click the "Add Item" button to update it
                                                 
                         \t\t\tNOW YOU HAVE EDITED AN ITEM IN YOUR LIST!
                                                 
@@ -46,17 +46,18 @@ public class HelpScreen
                         1: Click display on the menu bar at the top
                         2: Select Display All ( or whichever you want )
                         3: Click the item you want to delete and close the window
-                        4: Click the "Delete Item" button
+                        4: Click the "Delete" button
                                      
                         \t\t\tNOW YOU HAVE DELETED AN ITEM IN YOUR LIST!
                                                 
                         --------------------------------------
-                        HOW TO MARK AN ITEM AS COMPLETE IN A LIST
+                        HOW TO MARK AN ITEM AS COMPLETE OR INCOMPLETE IN A LIST
                         --------------------------------------
                         1: Click display on the menu bar at the top
                         2: Select Display All ( or whichever you want )
-                        3: Click the item you want to mark complete and close the window
-                        4: Click the "Mark Complete" button
+                        3: Click the item you want to mark complete (incomplete is top) or incomplete (complete is bottom)
+                         and close the window
+                        4: Click the "Mark Complete" or "Mark Incomplete" button
                                      
                         \t\t\tNOW YOU HAVE MARKED AN ITEM AS COMPLETE IN YOUR LIST!
                                                 

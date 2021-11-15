@@ -28,6 +28,7 @@ class Controller
     + displayIncomplete()
     + addItem()
     + markComplete()
+    + markIncomplete()
     + delete()
     + clear()
     + edit()
@@ -121,6 +122,16 @@ class MarkComplete
     + markComplete()
 }
 
+class MarkIncomplete
+{
+    - ObservableList<CreateItem> incompleteList
+    - ListView<CreateItem> incomplete
+    - ObservableList<CreateItem> completedList
+    - ListView<CreateItem> complete
+
+    + markIncomplete()
+}
+
 class Open
 {
     - String path
@@ -150,6 +161,7 @@ Controller -- Display
 Controller -- Edit
 Controller -- HelpScreen
 Controller -- MarkComplete
+Controller -- MarkIncomplete
 Controller -- Open
 Controller -- Save
 

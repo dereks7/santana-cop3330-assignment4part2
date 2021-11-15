@@ -172,6 +172,15 @@ public class Controller
     }
 
     @FXML
+    public void markIncomplete(Event event) // done
+    {
+        // mark an item incomplete by calling markIncomplete() from class MarkIncomplete
+
+        MarkIncomplete incomp = new MarkIncomplete();
+        incomp.markIncomplete(incomplete, incompleteList, completed, completedList);
+    }
+
+    @FXML
     public void delete(Event event) // done
     {
         // delete an item by calling deleteItem() from class Delete
