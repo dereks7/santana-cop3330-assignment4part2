@@ -40,6 +40,7 @@ public class Edit
     public void cannotEdit()
     {
         // user tried to edit a completed item
+        // display error message
 
         String title = "ERROR";
         String message =

@@ -19,8 +19,8 @@ public class Save
         // use a file chooser to save the .txt file of the list
 
         FileChooser fileChooser = new FileChooser();
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(".txt", "*.txt");
-        fileChooser.getExtensionFilters().add(extFilter);
+        FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter(".txt", ".txt");
+        fileChooser.getExtensionFilters().add(filter);
         fileChooser.setTitle("Save To-Do List");
         File file = fileChooser.showSaveDialog(null);
 
@@ -31,21 +31,27 @@ public class Save
 
     public static void write(String path, ObservableList<CreateItem> incompleteList, ObservableList<CreateItem> completedList) throws IOException
     {
-        // write all the necessary text of the list into .txt file using a buffered writer
+        // write all the necessary text of the list into .txt file
 
         BufferedWriter bw = new BufferedWriter(new FileWriter(path));
 
+        // loop through incomplete list and write it into file
+
         bw.write("Incomplete\n");
 
-        for (CreateItem incompleteItem: incompleteList)
+        for(int i=0; i<incompleteList.size(); i++)
         {
+            CreateItem incompleteItem = incompleteList.get(i);
             bw.write(String.format("%s:\t%s\n", incompleteItem.getDate(), incompleteItem.getDescription()));
         }
 
+        // loop through complete list and write it into file
+
         bw.write("Complete\n");
 
-        for (CreateItem completedItem: completedList)
+        for(int i=0; i<completedList.size(); i++)
         {
+            CreateItem completedItem = completedList.get(i);
             bw.write(String.format("%s:\t%s\n", completedItem.getDate(), completedItem.getDescription()));
         }
 

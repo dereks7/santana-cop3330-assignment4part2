@@ -13,6 +13,7 @@ public class Delete
     public void deleteItem(ObservableList<CreateItem> incompleteList, ListView<CreateItem> incomplete, ObservableList<CreateItem> completedList, ListView<CreateItem> completed)
     {
         // delete the selected item in either the incomplete or completed list views
+        // based on what user selected
 
         completedList.remove(completed.getSelectionModel().getSelectedItem());
         incompleteList.remove(incomplete.getSelectionModel().getSelectedItem());

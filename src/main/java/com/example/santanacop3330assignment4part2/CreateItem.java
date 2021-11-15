@@ -71,7 +71,7 @@ public class CreateItem
     @Override
     public String toString()
     {
-        // converts the item into a string to display it in the application
+        // converts the item into a string to display it in the list view in the application
 
         return date.toString() + ":\t\t"+ description;
     }

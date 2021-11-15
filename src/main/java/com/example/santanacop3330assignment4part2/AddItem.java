@@ -24,7 +24,7 @@ public class AddItem
         {
             // if the description is <= 256 and >= 1 then
             // add the item into the observable list and list view
-            // else error message
+            // else display an error message
 
             if(description.getText().length() <= 256 && description.getText().length() >= 1)
             {

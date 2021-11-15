@@ -90,7 +90,7 @@ public class Open
         }
         br.close();
 
-        // return your completed list
+        // return you complete list
 
         return complete;
     }

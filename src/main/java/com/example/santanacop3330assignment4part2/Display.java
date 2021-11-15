@@ -20,6 +20,8 @@ public class Display
 
     public void displayAll(ListView<CreateItem> incomplete, ListView<CreateItem> complete)
     {
+        // create a new window for this
+
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
@@ -45,6 +47,8 @@ public class Display
 
     public void displayComplete(ListView<CreateItem> complete)
     {
+        // create a new window for this
+
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
@@ -70,6 +74,8 @@ public class Display
 
     public void displayIncomplete(ListView<CreateItem> incomplete)
     {
+        // create a new window for this
+
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);

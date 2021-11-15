@@ -24,16 +24,6 @@ public class Controller
     private DatePicker date;
     @FXML
     private TextField description;
-    @FXML
-    private Button addButton;
-    @FXML
-    private Button editButton;
-    @FXML
-    private Button markCompleteButton;
-    @FXML
-    private Button deleteButton;
-    @FXML
-    private Button clearButton;
 
     public ObservableList<CreateItem> completed = FXCollections.observableArrayList();
     public ObservableList<CreateItem> incomplete = FXCollections.observableArrayList();

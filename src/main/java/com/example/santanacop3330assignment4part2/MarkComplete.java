@@ -17,14 +17,14 @@ public class MarkComplete
 {
     public void markComplete(ObservableList<CreateItem> incompleteList, ListView<CreateItem> incomplete, ObservableList<CreateItem> completedList, ListView<CreateItem> complete)
     {
-        CreateItem item = null;
-
         // if the user has an item selected that is not complete
         // then remove it from incomplete and add it to complete
         // call setComplete() and add it to complete ListView
 
         if (incomplete.getSelectionModel().getSelectedItem() != null)
         {
+            CreateItem item;
+
             item = incomplete.getSelectionModel().getSelectedItem();
 
             incompleteList.remove(item);
