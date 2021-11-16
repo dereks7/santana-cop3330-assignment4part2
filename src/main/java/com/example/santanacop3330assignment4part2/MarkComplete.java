@@ -14,7 +14,7 @@ public class MarkComplete
     {
         // if the user has an item selected that is not complete
         // then remove it from incomplete and add it to complete
-        // call setComplete() and add it to complete ListView
+        // call setComplete() and add it to the complete ListView
 
         CreateItem item;
 

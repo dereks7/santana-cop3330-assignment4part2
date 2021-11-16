@@ -10,7 +10,7 @@ public class MarkIncomplete
     {
         // if the user has an item selected that is complete
         // then remove it from complete and add it to incomplete
-        // call setIncomplete() and add it to incomplete ListView
+        // call setIncomplete() and add it to the incomplete ListView
 
         CreateItem item;
 

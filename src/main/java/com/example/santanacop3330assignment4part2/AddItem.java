@@ -58,7 +58,6 @@ public class AddItem
                 window.showAndWait();
             }
         }
-
         else
         {
             // call update() from the Edit class and overwrite data to new given data

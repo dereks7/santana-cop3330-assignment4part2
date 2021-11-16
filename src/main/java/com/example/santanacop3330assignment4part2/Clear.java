@@ -16,7 +16,6 @@ public class Clear
 
         incomplete.clear();
         complete.clear();
-
         incompleteList.refresh();
         completeList.refresh();
     }

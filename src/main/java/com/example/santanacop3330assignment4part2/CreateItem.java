@@ -19,7 +19,7 @@ public class CreateItem
         // applying the value of description date and complete to set values
         // description will be description given
         // date will be date given
-        // and complete will be false since it is a new item and is defaulted to incomplete
+        // and complete will be false since it is defaulted as incomplete
 
         this.description = description;
         this.date = date;

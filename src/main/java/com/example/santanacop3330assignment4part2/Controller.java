@@ -30,7 +30,7 @@ public class Controller
     public CreateItem item;
 
     @FXML
-    public void helpScreen(Event event) // done
+    public void helpScreen(Event event)
     {
         // helps the user navigate the program
 
@@ -38,7 +38,7 @@ public class Controller
     }
 
     @FXML
-    public void initialize() // done
+    public void initialize()
     {
         // initialize variable date & description to give them a placeholder value
 
@@ -47,7 +47,7 @@ public class Controller
     }
 
     @FXML
-    public void save(Event event) throws IOException // done
+    public void save(Event event) throws IOException
     {
         // save the file to a given path and name
 
@@ -58,7 +58,7 @@ public class Controller
     }
 
     @FXML
-    public void open(Event event) throws IOException // done
+    public void open(Event event) throws IOException
     {
         // call openList() from class Open to get the path of the file
 
@@ -98,7 +98,7 @@ public class Controller
         completedList.setItems(completed);
     }
 
-    public LocalDate dateFromFile(ArrayList<String> item, int index) // done
+    public LocalDate dateFromFile(ArrayList<String> item, int index)
     {
         // split the string at the instance of " : "
         // when split, it gives us date and description separate from eachother
@@ -108,7 +108,7 @@ public class Controller
         return LocalDate.parse(str[0].trim());
     }
 
-    public String descriptionFromFile(ArrayList<String> item, int index) // done
+    public String descriptionFromFile(ArrayList<String> item, int index)
     {
         // split the string at the instance of " : "
         // when split, it gives us date and description separate from eachother
@@ -119,7 +119,7 @@ public class Controller
     }
 
     @FXML
-    public void displayAll(Event event) // done
+    public void displayAll(Event event)
     {
         // display all items by calling displayAll()
 
@@ -130,7 +130,7 @@ public class Controller
     }
 
     @FXML
-    public void displayComplete(Event event) // done
+    public void displayComplete(Event event)
     {
         // display all complete items by calling displayComplete()
 
@@ -139,7 +139,7 @@ public class Controller
     }
 
     @FXML
-    public void displayIncomplete(Event event) // done
+    public void displayIncomplete(Event event)
     {
         // display all incomplete items by calling displayIncomplete()
 
@@ -149,7 +149,7 @@ public class Controller
     }
 
     @FXML
-    public void addItem(Event event) // done
+    public void addItem(Event event)
     {
         // adds an item to the list by calling addItem() from class AddItem
 
@@ -163,7 +163,7 @@ public class Controller
     }
 
     @FXML
-    public void markComplete(Event event) // done
+    public void markComplete(Event event)
     {
         // mark an item complete by calling markComplete() from class MarkComplete
 
@@ -172,7 +172,7 @@ public class Controller
     }
 
     @FXML
-    public void markIncomplete(Event event) // done
+    public void markIncomplete(Event event)
     {
         // mark an item incomplete by calling markIncomplete() from class MarkIncomplete
 
@@ -181,7 +181,7 @@ public class Controller
     }
 
     @FXML
-    public void delete(Event event) // done
+    public void delete(Event event)
     {
         // delete an item by calling deleteItem() from class Delete
 
@@ -190,7 +190,7 @@ public class Controller
     }
 
     @FXML
-    public void clear(Event event) // done
+    public void clear(Event event)
     {
         // clear a list by calling clearList() from class Clear
 
@@ -199,7 +199,7 @@ public class Controller
     }
 
     @FXML
-    public void edit(Event event) // done
+    public void edit(Event event)
     {
         // edit an item by calling edit() from class Edit
 

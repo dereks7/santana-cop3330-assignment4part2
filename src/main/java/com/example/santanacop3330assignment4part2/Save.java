@@ -35,7 +35,7 @@ public class Save
 
         BufferedWriter bw = new BufferedWriter(new FileWriter(path));
 
-        // loop through incomplete list and write it into file
+        // loop through the incomplete list and write it into file
 
         bw.write("Incomplete\n");
 
@@ -45,7 +45,7 @@ public class Save
             bw.write(String.format("%s:\t%s\n", incompleteItem.getDate(), incompleteItem.getDescription()));
         }
 
-        // loop through complete list and write it into file
+        // loop through the complete list and write it into file
 
         bw.write("Complete\n");
 

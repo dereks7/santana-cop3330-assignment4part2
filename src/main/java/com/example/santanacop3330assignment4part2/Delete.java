@@ -14,12 +14,10 @@ public class Delete
     {
         // delete the selected item in either the incomplete or completed list views
         // based on what user selected
+        // and update the list view
 
         completedList.remove(completed.getSelectionModel().getSelectedItem());
         incompleteList.remove(incomplete.getSelectionModel().getSelectedItem());
-
-        // update the ListView
-
         completed.refresh();
         incomplete.refresh();
 

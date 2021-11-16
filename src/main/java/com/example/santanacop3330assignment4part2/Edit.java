@@ -29,7 +29,7 @@ public class Edit
     public void update(ObservableList<CreateItem> list, CreateItem item, TextField description, DatePicker date)
     {
         // user hit edit and then changed values and hit add item to list button
-        // so this is used to update the list selected for edit
+        // so this is used to update the list selected for edit() in class Edit
 
         list.remove(item);
         item.setDate(date.getValue());

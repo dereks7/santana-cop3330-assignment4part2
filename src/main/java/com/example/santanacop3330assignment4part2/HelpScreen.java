@@ -12,7 +12,7 @@ public class HelpScreen
 {
     public static void help(String title)
     {
-        // user selected the Help menu item and selected directions
+        // user selected the help menu item and selected directions
 
         String message =
                 """

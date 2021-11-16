@@ -17,7 +17,6 @@ import javafx.stage.Stage;
 public class Display
 {
     // display all the items
-
     public void displayAll(ListView<CreateItem> incomplete, ListView<CreateItem> complete)
     {
         // create a new window for this
@@ -44,7 +43,6 @@ public class Display
     }
 
     // display completed items
-
     public void displayComplete(ListView<CreateItem> complete)
     {
         // create a new window for this
@@ -71,7 +69,6 @@ public class Display
     }
 
     // display incomplete items
-
     public void displayIncomplete(ListView<CreateItem> incomplete)
     {
         // create a new window for this
